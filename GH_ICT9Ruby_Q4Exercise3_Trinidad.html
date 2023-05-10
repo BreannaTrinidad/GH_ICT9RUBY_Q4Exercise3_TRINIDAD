@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Javascript Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  </head>
+  <body>
+      <p>Centimeter to Feet Conversion</p>
+      <form>
+          <input type="number" class="form-control" id="cmInput" name="cmInput">
+        </div>
+        <button type="button" class="btn btn-success" onclick="convertToFeet()">Convert!</button>
+      </form>  
+      <br>
+      <div id="feetOutput"></div>
+    <script>
+      function convertToFeet() {
+        const cmInput = document.getElementById('cmInput').value;
+        const feet = cmInput / 30.48;
+        document.getElementById('feetOutput').innerHTML = feet.toFixed(2) + ' feet';
+      }
+    </script>
+  </body>
+</html
